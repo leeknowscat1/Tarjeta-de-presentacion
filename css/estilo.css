@@ -1,0 +1,39 @@
+:root{
+    --bg-blue:#096366;
+} /*esta cosiaca es para llamar cosas sin tener que copiar y pegar*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    background-color: #019ba0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta{
+    width: 25%;
+    height: 70vh;
+    background-color: #ffffff;
+    border: 5px solid #096366; /* para los bordes y sus formas, solid=tipo del borde */
+    border-radius: 4rem; /*para los bordes de la tarjeta*/
+    box-shadow: 0 0 30px var(--bg-blue); /*los primeros dos numeros son de posición en x y, el tercero es la cantidad/longitud de la extensión de la sombra. var() es para llamar lo que hay en root*/
+    position: relative;
+}
+.foot{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--bg-blue);
+    border-radius: 0 0 3rem 3rem ;
+    position: absolute; /*para activar o usar esta cuestion de posiciones, el contenedor que tiene el elemento que quieres posicionar debe tener un position:relative*/
+    bottom: 0;
+}
+.Avatar{
+    width: 60%;
+    border: 3px solid var(--bg-blue);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 20px var(--bg-blue);
+}

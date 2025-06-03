@@ -21,6 +21,11 @@
     border-radius: 4rem; /*para los bordes de la tarjeta*/
     box-shadow: 0 0 30px var(--bg-blue); /*los primeros dos numeros son de posición en x y, el tercero es la cantidad/longitud de la extensión de la sombra. var() es para llamar lo que hay en root*/
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 .foot{
     width: 100%;
@@ -29,11 +34,35 @@
     border-radius: 0 0 3rem 3rem ;
     position: absolute; /*para activar o usar esta cuestion de posiciones, el contenedor que tiene el elemento que quieres posicionar debe tener un position:relative*/
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 .Avatar{
     width: 60%;
     border: 3px solid var(--bg-blue);
     border-radius: 50%;
-    position: absolute;
     box-shadow: 0 0 20px var(--bg-blue);
+}
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #096366;
+    text-align: center;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #426263;
+    text-align: center;
 }
